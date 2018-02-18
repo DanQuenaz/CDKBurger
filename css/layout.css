@@ -1,0 +1,17 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: url('../src/backGround2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  imp2 {
+    font-size: 200%;
+    color: white;
+  }
