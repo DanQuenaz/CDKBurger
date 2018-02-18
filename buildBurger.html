@@ -27,10 +27,12 @@
             </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
     </nav>
+
 <div>
 
-
 <div class="container">
+
+
 <div class="col-sm-5 col-xs-offset-1">
     <h2>Hambúrgueres Prontos</h2>
     <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
@@ -47,8 +49,8 @@
         <tbody>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="xSalad"></label>
+            <div class="radio">
+                <label><input type="radio" name="prontos" value="" id="xSalada"></label>
             </div>
             </td>
             <td>X-Salada</td>
@@ -57,8 +59,8 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="xBurger"></label>
+            <div class="radio">
+                <label><input type="radio" name="prontos" value="" id="xBurger"></label>
             </div>
             </td>
             <td>X-Burger</td>
@@ -67,18 +69,18 @@
         </tr>
         <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="xFrango"></label>
+                <div class="radio">
+                    <label><input type="radio" name="prontos" value="" id="xFrango"></label>
                 </div>
                 </td>
-                <td>X-Bacon</td>
+                <td>X-Frango</td>
                 <td>.................................</td>
                 <td>R$9.50</td>
             </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="xBacon"></label>
+            <div class="radio">
+                <label><input type="radio" name="prontos" value="" id="xBacon"></label>
             </div>
             </td>
             <td>X-Bacon</td>
@@ -86,15 +88,15 @@
             <td>R$10.00</td>
         </tr>
         <tr>
-                <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="xTudo"></label>
-                </div>
-                </td>
-                <td>X-Tudo</td>
-                <td>.................................</td>
-                <td>R$12.00</td>
-            </tr>
+            <td>
+            <div class="radio">
+                <label><input type="radio" name="prontos" value="" id="xTudo"></label>
+            </div>
+            </td>
+            <td>X-Tudo</td>
+            <td>.................................</td>
+            <td>R$12.00</td>
+        </tr>
         </tbody>
     </table>
     </div>
@@ -118,8 +120,8 @@
         <tbody>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="gergelim"></label>
+            <div class="radio">
+                <label><input type="radio" name="paes" value="" id="gergelim"></label>
             </div>
             </td>
             <td>Gergelim</td>
@@ -128,8 +130,8 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="parmeOr"></label>
+            <div class="radio">
+                <label><input type="radio" name="paes" value="" id="parmeOr"></label>
             </div>
             </td>
             <td>Parmesão e Orégano</td>
@@ -138,8 +140,8 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="queijos3"></label>
+            <div class="radio">
+                <label><input type="radio" name="paes" value="" id="queijos3"></label>
             </div>
             </td>
             <td>Três Queijos</td>
@@ -148,8 +150,8 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="italiano"></label>
+            <div class="radio">
+                <label><input type="radio" name="paes" value="" id="italiano"></label>
             </div>
             </td>
             <td>Italiano</td>
@@ -158,8 +160,8 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="frances"></label>
+            <div class="radio">
+                <label><input type="radio" name="paes" value="" id="frances"></label>
             </div>
             </td>
             <td>Francês</td>
@@ -189,8 +191,18 @@
             <tbody>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="hamburguer"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0" max="5" id="hamburguer">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Hambúguer</td>
@@ -199,8 +211,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="filFrango"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="0" min="0" max="5" id="filFrango">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Filé de Frango</td>
@@ -209,8 +231,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="desfFrango"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[3]" class="form-control input-number" value="0" min="0" max="5" id="desfFrango">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Frango Desfiado</td>
@@ -219,8 +251,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="picanha"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[4]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[4]" class="form-control input-number" value="0" min="0" max="5" id="picanha">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[4]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Picanha</td>
@@ -250,8 +292,18 @@
             <tbody>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="mussarela"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[5]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[5]" class="form-control input-number" value="0" min="0" max="5" id="mussarela">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[5]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Mussarela</td>
@@ -260,8 +312,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="cheddar"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[6]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[6]" class="form-control input-number" value="0" min="0" max="5" id="cheddar">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[6]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Cheddar</td>
@@ -270,8 +332,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="prato"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[7]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[7]" class="form-control input-number" value="0" min="0" max="5" id="prato">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[7]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Prato</td>
@@ -301,8 +373,18 @@
             <tbody>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="alface"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[8]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[8]" class="form-control input-number" value="0" min="0" max="5" id="alface">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[8]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Alface</td>
@@ -311,8 +393,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="tomate"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[9]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[9]" class="form-control input-number" value="0" min="0" max="5" id="tomate">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[9]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Tomate</td>
@@ -321,8 +413,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="cebola"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[11]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[11]" class="form-control input-number" value="0" min="0" max="5" id="cebola">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[11]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Cebola</td>
@@ -331,8 +433,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="ovo"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[12]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[12]" class="form-control input-number" value="0" min="0" max="5" id="ovo">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[12]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Ovo Frito</td>
@@ -341,8 +453,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="milho"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[13]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[13]" class="form-control input-number" value="0" min="0" max="5" id="milho">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[13]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Milho</td>
@@ -351,8 +473,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="azeitona"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[14]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[14]" class="form-control input-number" value="0" min="0" max="5" id="azeitona">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[14]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Azeitona</td>
@@ -361,8 +493,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="presunto"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[15]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[15]" class="form-control input-number" value="0" min="0" max="5" id="presunto">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[15]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Presunto</td>
@@ -371,8 +513,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="batataPalha"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[16]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[16]" class="form-control input-number" value="0" min="0" max="5" id="batataPalha">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[16]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Batata Palha</td>
@@ -381,8 +533,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="picles"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[17]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[17]" class="form-control input-number" value="0" min="0" max="5" id="picles">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[17]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Picles</td>
@@ -391,8 +553,18 @@
             </tr>
             <tr>
                 <td>
-                <div class="checkbox">
-                    <label><input type="checkbox" value="" id="bacon"></label>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[18]">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[18]" class="form-control input-number" value="0" min="0" max="5" id="bacon">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[18]">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
                 </div>
                 </td>
                 <td>Bacon</td>
@@ -493,8 +665,18 @@
         <tbody>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="batataFrita"></label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[19]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[19]" class="form-control input-number" value="0" min="0" max="5" id="batataFrita">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[19]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
             </div>
             </td>
             <td>Batata Frita</td>
@@ -503,8 +685,18 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="onionRings"></label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[20]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[20]" class="form-control input-number" value="0" min="0" max="5" id="onionRings">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[20]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
             </div>
             </td>
             <td>Onion Rings</td>
@@ -534,8 +726,18 @@
         <tbody>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="refrigerante"></label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[21]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[21]" class="form-control input-number" value="0" min="0" max="5" id="refrigerante">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[21]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
             </div>
             </td>
             <td>Refrigerante</td>
@@ -544,8 +746,18 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="suco"></label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[22]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[22]" class="form-control input-number" value="0" min="0" max="5" id="suco">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[22]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
             </div>
             </td>
             <td>Suco</td>
@@ -554,8 +766,18 @@
         </tr>
         <tr>
             <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="agua"></label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[23]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[23]" class="form-control input-number" value="0" min="0" max="5" id="agua">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[23]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
             </div>
             </td>
             <td>Água</td>
@@ -588,6 +810,8 @@
 
     <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->	  
 <script src="js/jquery.js"></script>	  
-<script src="js/bootstrap.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script src="js/minusScript.js"></script>
+<script src="js/buildBurger.js"></script>	
 </body>	
 </html>
