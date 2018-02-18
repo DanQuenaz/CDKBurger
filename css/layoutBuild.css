@@ -1,0 +1,18 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: url('../src/backGround3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  td {
+    font-size: 100%;
+    color: white;
+    padding: 0;
+  }
