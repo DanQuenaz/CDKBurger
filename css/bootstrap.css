@@ -7,7 +7,8 @@
 
 /*----- Objetos criados ------------------------------------------------------------*/
 imp {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+  font-family: 'Anton';
   font-size: 150%;
   color: white;
 }
@@ -4005,7 +4006,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   padding: 10px 15px;
   font-size: 150%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Fredoka One';
   color: #ffffff;
 }
 .nav > li > a:hover,

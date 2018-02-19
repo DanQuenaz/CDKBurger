@@ -6,13 +6,20 @@ html {
 
   body {
     margin: 0;
-    background: url('../src/backGround2.jpg');
+    background: url('../src/Teste4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
+  imp1 {
+    font-family: 'Caudex';
+    font-size: 300%;
+    color: #fff;
+    text-shadow: 4px 4px 4px #000;
+  }
+
   imp2 {
-    font-family: Times;
-    font-size: 150%;
-    color: white;
+    font-family: 'Caudex';
+    font-size: 140%;
+    color: #fff;
   }
