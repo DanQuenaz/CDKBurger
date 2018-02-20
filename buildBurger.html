@@ -7,33 +7,38 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/layoutBuild.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/indexLayout.css">
 </head>	
 <body>
-    <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand"><img src="./src/Logo2.png" class="img-rounded" alt="Cinque Terre" style="height: 84px; width: 200px"></a>
-            </div>
-    
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <!-- <li class="active"><a href="#">SOBRE<span class="sr-only">(current)</span></a></li>-->
-                    <li><a href="sobre.html">SOBRE</a></li>
-                    <li><a href="comofunciona.html">COMO FUNCIONA?</a></li>
-                    <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
-                    <li><a href="contato.html">CONTATO</a></li>
-                </ul>
 
-            </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-    </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+            </button>
+        <a class="navbar-brand" href="index.html"><img src="./src/Logo2.png" class="img-rounded" alt="Cinque Terre" style="height: 84px; width: 200px"></a>
+    </div>
 
-<div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <!-- <li class="active"><a href="#">SOBRE<span class="sr-only">(current)</span></a></li>-->
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="comofunciona.html">COMO FUNCIONA</a></li>
+            <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav> 
 
 <div class="container">
-
-
 <div class="col-sm-5 col-xs-offset-1">
     <center><img src="./src/lanche.png" style = "width: 100px; height: 100px;"></center>                    
     <div class="table-responsive">          
@@ -783,25 +788,25 @@
 </div>
 
 <footer>
-    <div class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-collapse collapse" id="footer-body">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="contato.html">@CDKBurger</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://www.facebook.com/"><img src="./src/Face.png" class="img-squared" alt="Cinque Terre" style="height: 30px; width: 30px;"></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="./src/Insta.png" class="img-squared" alt="Cinque Terre" style="height: 30px; width: 30px;"></a></li>
-                    <li><a href="https://twitter.com/"><img src="./src/Twitter.png" class="img-squared" alt="Cinque Terre" style="height: 30px; width: 30px;"></a></li>
-                </ul>
-            </div>
+<div class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-collapse collapse" id="footer-body">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="contato.html">@CDKBurger</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/"><img src="./src/Face.png" class="img-squared" alt="Cinque Terre" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="./src/Insta.png" class="img-squared" alt="Cinque Terre" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="https://twitter.com/"><img src="./src/Twitter.png" class="img-squared" alt="Cinque Terre" style="height: 30px; width: 30px;"></a></li>
+            </ul>
         </div>
     </div>
+</div>
 </footer>
 
     <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->	  
-<script src="js/jquery.js"></script>	  
-<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/minusScript.js"></script>
 <script src="js/buildBurger.js"></script>	
 </body>	

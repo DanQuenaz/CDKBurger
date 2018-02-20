@@ -1,0 +1,51 @@
+.navbar-inverse {
+    background-color: rgba(2,2,2,0.5);
+    border-color: transparent;
+  }
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    min-height: 96px;
+  }
+
+.navbar-brand {
+    float: left;
+    height: 100px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 96px;
+  }
+
+  .navbar-nav > li > a {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    line-height: 18px;
+  }
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    min-height: 96px;
+  }
+
+  .navbar-brand-footer {
+    float: left;
+    height: 50px;
+    padding: 20px 20px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .navbar-nav-footer > li > a {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 30px;
+  }
+
+  .jumbotron {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    margin-bottom: 70px;
+    background-color: rgba(2,2,2,0.5);
+  }
