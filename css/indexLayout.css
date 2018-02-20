@@ -21,6 +21,7 @@
     padding-top: 60px;
     padding-bottom: 20px;
     line-height: 18px;
+    font-family: Oswald;
   }
 
 .navbar-fixed-top {
@@ -45,7 +46,7 @@
     height: 50px;
     background-color: rgba(2,2,2,0.5);
     font-size: 20px;
-    font-family: "Fredoka One";
+    font-family: "Oswald";
     vertical-align: center;
     line-height: 50px;
     padding: 0 10px 0 10px;
