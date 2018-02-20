@@ -32,20 +32,43 @@
   .navbar-brand-footer {
     float: left;
     height: 50px;
-    padding: 20px 20px;
+    padding-top: 17px;
+    padding-bottom: 20px;
     font-size: 10px;
-    line-height: 10px;
+    line-height: 0px;
   }
 
-  .navbar-nav-footer > li > a {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    line-height: 30px;
-  }
-
-  .jumbotron {
-    padding-top: 30px;
-    padding-bottom: 90px;
-    margin-bottom: 70px;
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     background-color: rgba(2,2,2,0.5);
+    font-size: 20px;
+    font-family: "Fredoka One";
+    vertical-align: center;
+    line-height: 50px;
+    padding: 0 10px 0 10px;
+  }
+}
+  
+.contatoCDK {
+  float: left;
+}
+
+.social {
+  float: right;
+}
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  .footer-block { margin: 20px 0; }
+  
+  .footer > .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
