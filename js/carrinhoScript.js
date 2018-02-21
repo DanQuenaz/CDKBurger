@@ -7,6 +7,7 @@ var blockOther = false;
 
 btnAddCart.addEventListener('click', e=>{
     if(count <= 5 && !blockOther){
+        count += 1;
         var table = document.getElementById("cart");
         var row = table.insertRow(1);
         var cell1 = row.insertCell(0);
@@ -14,12 +15,12 @@ btnAddCart.addEventListener('click', e=>{
         var cell3 = row.insertCell(2);
         var cell4 = row.insertCell(3);
         
-        cell1.innerHTML = "Produto 1";
+        cell1.innerHTML = "Produto "+count;
         cell2.innerHTML = "R$1.99";
         cell3.innerHTML = "<input type="+"\"number\"" +"class="+"\"form-control text-center\"" +"value="+"\"1\"" +"min="+"\"1\"" +"max="+"\"99\""+">";
         cell4.innerHTML = "R$1.99";
 
-        count += 1;
+        
         blockOther = true;
     }
 });
@@ -29,7 +30,7 @@ btnBuildOther.addEventListener('click', e=>{
     blockOther = false;
 });
 
-btnCheckout.addEventListener('click', e=>{
+/* btnCheckout.addEventListener('click', e=>{
     $('html, body').animate({ scrollTop: 0 }, 'fast');
     blockOther = false;
     alert("Pedido realizado com sucesso!");
@@ -38,4 +39,4 @@ btnCheckout.addEventListener('click', e=>{
     } 
     count = 0;
 
-});
+}); */
