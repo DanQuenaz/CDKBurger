@@ -86,3 +86,25 @@
 .zoom:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.zoom2 {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 200px;
+	height: 100px;
+	margin: 0 auto;
+}
+.zoom2:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom3 {
+	padding: 0px;
+	transition: transform .2s; /* Animation */
+	width: 250px;
+	height: 150px;
+	margin: 0 auto;
+}
+.zoom3:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

@@ -149,4 +149,3 @@ rdXtudo.addEventListener('click', e => {
     vlPicles.value = "0";
 
 });
-
