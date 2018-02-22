@@ -78,8 +78,8 @@
     padding: 0px;
     background-image: "./src/monte4.png";
     transition: transform .2s; /* Animation */
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
 }
 

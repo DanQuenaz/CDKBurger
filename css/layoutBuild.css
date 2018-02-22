@@ -8,9 +8,10 @@ html {
 
   body {
     margin: 0;
-    background: url('../src/teste4.jpg');
+    background: url('../src/teste4.jpg') center center no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+		background-repeat: no-repeat;
+		
   }
 
   td {

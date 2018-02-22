@@ -48,7 +48,7 @@ $("#form1").submit(function() {
     }
     else{
         alert("Pedido realizado com sucesso!");
-        window.location.href="./index.html";
+        window.location.href="index.html";
     }
 });
 
