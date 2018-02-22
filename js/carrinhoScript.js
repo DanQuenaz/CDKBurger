@@ -2,8 +2,10 @@ var btnAddCart = document.getElementById('addCart');
 var btnBuildOther = document.getElementById('buildOther');
 var btnCheckout = document.getElementById('checkout'); 
 
+
 var count = 0;
 var blockOther = false;
+
 
 $('table').on('click','.delete',function(){
     $(this).parents('tr').remove();

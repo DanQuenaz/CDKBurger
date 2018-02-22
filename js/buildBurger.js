@@ -22,6 +22,21 @@ const vlPrato = document.getElementById('prato');
 const vlCheddar = document.getElementById('cheddar');
 const vlAzeitona = document.getElementById('azeitona');
 const vlCebola = document.getElementById('cebola');
+const btnTrad = document.getElementById('tradicionais');
+const btnMonte = document.getElementById('monte');
+const btnMontee = document.getElementById('montee');
+
+btnMonte.addEventListener('click', e=>{
+    window.scrollTo(0, 850);
+});
+
+btnMontee.addEventListener('click', e=>{
+    window.scrollTo(0, 850);
+});
+
+btnTrad.addEventListener('click', e=>{
+    window.scrollTo(0, 250);
+});
 
 
 rdXsalada.addEventListener('click', e => {
