@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	  
     <meta name="viewport" content="width=device-width, initial-scale=1">	  	  
     <title>CDK BURGER</title>	  	  <!-- Bootstrap CSS -->	  
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/layoutBuild.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -60,815 +60,87 @@
 </nav> 
 
 
-<div class="container" id="myScrollspy" data-spy="affix">
-<div class="col-sm-3 col-md-5 col-xs-offset-7" >
-    <br><br>
-<center><img src="./src/cart.png" style="width:15%; height:15%"/></center>
-<table id="cart" class="table table-hover table-condensed">
-    <thead>
-        <tr>
-            <th style="width:40%; color:#ffffff; size:280%">Produto</th>
-            <th style="width:15%; color:#ffffff; size:280%">Preço</th>
-            <th style="width:10%; color:#ffffff; size:280%">Quantidade</th>
-            <th style="width:15%; color:#ffffff; size:280%" class="text-center">Subtotal</th>
-            <th style="width:20%" class="text-center"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong>Total 1.99</strong></td>
-        </tr>
-        <tr>
-            <td><button  class="btn btn-warning"id="buildOther">Montar Outro</button></td>
-            <td colspan="2" class="hidden-xs"></td>
-            <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
-            <td><button class="btn btn-success btn-block" id="checkout">Finalizar</button></td>
-        </tr>
-    </tfoot>
-</table>
-</div>
-</div>
-
+<!-- Page Content -->
 <div class="container">
-    <div class="col-2 col-md-3 ">
-            <div class="zoom2">
-        <img class="img-responsive" src="./src/Tradicionais.png" role="button" id="tradicionais" style="width:95%; height:95%">
-            </div>
-    </div>
-    <div class="col-2 col-md-3 ">
-            <div class="zoom3">
-        <img class="img-responsive" src="./src/Monte.png" role="button" id="monte" style="width:95%; height:95%">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h1 class="my-4">Shop Name</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Category 1</a>
+          <a href="#" class="list-group-item">Category 2</a>
+          <a href="#" class="list-group-item">Category 3</a>
         </div>
-    </div>
-</div>
 
+      </div>
+      <!-- /.col-lg-3 -->
 
-<br><br>
-<br><br>
+      <div class="col-lg-9">
 
+        <div class="row">
 
-<div class="container">
-<div class="col-3 col-md-5 col-xs-offset-0">
-    <center><img src="./src/lanchee.png" style = "width: 25%; height: 15%;"></center>                    
-    <div class="table-responsive">          
-    <table class="table">
-        <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="prontos" value="" id="xSalada"></label>
-            </div>
-            </td>
-            <td><h4>X-Salada</h4></td>
-            <td><h4>R$8.00</h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="prontos" value="" id="xBurger"></label>
-            </div>
-            </td>
-            <td><h4>X-Burger</h4></td>
-            <td><h4>R$9.00</h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="prontos" value="" id="xFrango"></label>
-            </div>
-            </td>
-            <td><h4>X-Frango</h4></td>
-            <td><h4>R$9.50</h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="prontos" value="" id="xBacon"></label>
-            </div>
-            </td>
-            <td><h4>X-Bacon</h4></td>
-            <td><h4>R$10.00<h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="prontos" value="" id="xTudo"></label>
-            </div>
-            </td>
-            <td><h4>X-Tudo<h4></td>
-            <td><h4>R$12.00<h4></td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-</div>
-</div>
-
-<div class="container">
-    <div class="col-2 col-md-2 ">
-        <button  class="btn btn-success btn-block" role="button" id="addCart" style="width:95%; height:95%"><h5>Adicionar ao Carrinho</h5></button>
-    </div>
-    <div class="col-2 col-md-2 ">
-        <button  class="btn btn-success btn-block" role="button" id="montee" style="width:95%; height:95%"><h5>Mais Complementos</h5></button>
-    </div>
-</div>
-
-<br><br>
-<br><br>
-<br><br>
-<div class="container">
-<div class="col-3 col-md-5 col-xs-offset-0">
-    <center><img src="./src/pao.png" style = "width: 30%; height: 20%;"></center>                             
-    <div class="table-responsive">          
-    <table class="table">
-        <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="paes" value="" id="gergelim"></label>
-            </div>
-            </td>
-            <td><h4>Gergelim</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="paes" value="" id="parmeOr"></label>
-            </div>
-            </td>
-            <td><h4>Parmesão e Orégano</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="paes" value="" id="queijos3"></label>
-            </div>
-            </td>
-            <td><h4>Três Queijos</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="paes" value="" id="italiano"></label>
-            </div>
-            </td>
-            <td><h4>Italiano</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="radio">
-                <label><input type="radio" name="paes" value="" id="frances"></label>
-            </div>
-            </td>
-            <td><h4>Francês</h4></td>
-            
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-</div>
-</div>
-
-<div class="container">
-    <div class="col-3 col-md-5 col-xs-offset-0">
-        <center><img src="./src/bife.png" style = "width: 20%; height: 10%;"></center><div class="table-responsive">          
-        <table class="table">
-            <thead>
-            <tr>
-                <th style="width:40%"></th>
-                <th style="width:40%"></th>
-                <th style="width:20%"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0" max="5" id="hamburguer">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" style="height: 50%; width:50% " alt=""></a>
+                        <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Item One</a>
+                        </h4>
+                        <h5>$24.99</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
                 </div>
-                </td>
-                <td><h4>Hambúguer</h4></td>
-                
-                <td><h4>R$2.50</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[2]" class="form-control input-number" value="0" min="0" max="5" id="filFrango">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" style="height: 50%; width:50% " alt=""></a>
+                        <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Item One</a>
+                        </h4>
+                        <h5>$24.99</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
                 </div>
-                </td>
-                <td><h4>Filé de Frango</h4></td>
-                
-                <td><h4>R$2.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[3]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[3]" class="form-control input-number" value="0" min="0" max="5" id="desfFrango">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" style="height: 50%; width:50% " alt=""></a>
+                        <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Item One</a>
+                        </h4>
+                        <h5>$24.99</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
                 </div>
-                </td>
-                <td><h4>Frango Desfiado</h4></td>
-                
-                <td><h4>R$2.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[4]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[4]" class="form-control input-number" value="0" min="0" max="5" id="picanha">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[4]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Picanha</h4></td>
-                
-                <td></h4>R$4.50</h4></td>
-            </tr>
-            </tbody>
-        </table>
+
         </div>
-</div>
-</div>
+        <!-- /.row -->
 
-<br><br>
+      </div>
+      <!-- /.col-lg-9 -->
 
-<div class="container">
-    <div class="col-3 col-md-5 col-xs-offset-0">
-        <center><img src="./src/queijo.png" style = "width: 30%; height: 20%;"></center>
-        <div class="table-responsive">          
-        <table class="table">
-            <thead>
-            <tr>
-                    <th style="width:40%"></th>
-                    <th style="width:40%"></th>
-                    <th style="width:20%"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[5]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[5]" class="form-control input-number" value="0" min="0" max="5" id="mussarela">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[5]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Mussarela</h4></td>
-                
-                <td><h4>R$2.50</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[6]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[6]" class="form-control input-number" value="0" min="0" max="5" id="cheddar">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[6]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Cheddar</h4></td>
-                
-                <td><h4>R$3.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[7]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[7]" class="form-control input-number" value="0" min="0" max="5" id="prato">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[7]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Prato</h4></td>
-                
-                <td><h4>R$2.50</h4></td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
-</div>
-</div>
-
-<br><br>
-
-<div class="container">
-    <div class="col-3 col-md-5 col-xs-offset-0">
-        <center><img src="./src/tomate.png" style = "width: 35%; height: 25%;"></center>
-        <div class="table-responsive">          
-        <table class="table">
-            <thead>
-            <tr>
-                    <th style="width:40%"></th>
-                    <th style="width:40%"></th>
-                    <th style="width:20%"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[8]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[8]" class="form-control input-number" value="0" min="0" max="5" id="alface">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[8]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Alface</h4></td>
-                
-                <td><h4>R$0.40</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[9]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[9]" class="form-control input-number" value="0" min="0" max="5" id="tomate">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[9]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Tomate</h4></td>
-                
-                <td><h4>R$0.40</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[11]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[11]" class="form-control input-number" value="0" min="0" max="5" id="cebola">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[11]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Cebola</h4></td>
-                
-                <td><h4>R$1.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[12]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[12]" class="form-control input-number" value="0" min="0" max="5" id="ovo">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[12]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Ovo Frito</h4></td>
-                
-                <td><h4>R$1.50</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[13]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[13]" class="form-control input-number" value="0" min="0" max="5" id="milho">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[13]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Milho</h4></td>
-                
-                <td><h4>R$1.50</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[14]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[14]" class="form-control input-number" value="0" min="0" max="5" id="azeitona">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[14]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Azeitona</h4></td>
-                
-                <td><h4>R$2.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[15]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[15]" class="form-control input-number" value="0" min="0" max="5" id="presunto">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[15]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Presunto</h4></td>
-                
-                <td><h4>R$2.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[16]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[16]" class="form-control input-number" value="0" min="0" max="5" id="batataPalha">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[16]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Batata Palha</h4></td>
-                
-                <td><h4>R$2.50</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[17]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[17]" class="form-control input-number" value="0" min="0" max="5" id="picles">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[17]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Picles</h4></td>
-                
-                <td><h4>R$3.00</h4></td>
-            </tr>
-            <tr>
-                <td>
-                <div class="input-group">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[18]">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </span>
-                    <input type="text" name="quant[18]" class="form-control input-number" value="0" min="0" max="5" id="bacon">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[18]">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                    </span>
-                </div>
-                </td>
-                <td><h4>Bacon</h4></td>
-                
-                <td><h4>R$4.00</h4></td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
-</div>
-</div>
-
-<div class="container">
-<div class="col-3 col-md-5 col-xs-offset-0">
-    <center><img src="./src/molho.png" style = "width: 10%; height: 15%;"></center>
-    <div class="table-responsive">          
-    <table class="table">
-        <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="maionese"></label>
-            </div>
-            </td>
-            <td><h4>Maionese</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="ketchup"></label>
-            </div>
-            </td>
-            <td><h4>Ketchup</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="mostarda"></label>
-            </div>
-            </td>
-            <td><h4>Mostarda</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="barbecue"></label>
-            </div>
-            </td>
-            <td><h4>Barbecue</h4></td>
-            
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="checkbox">
-                <label><input type="checkbox" value="" id="picante"></label>
-            </div>
-            </td>
-            <td><h4>Picante</h4></td>
-            
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
     </div>
-</div>
-</div>
+    <!-- /.row -->
 
-<div class="container">
-<div class="col-3 col-md-5 col-xs-offset-0">
-    <center><img src="./src/batata.png" style = "width: 17%; height: 17%;"></center>
-    <div class="table-responsive">          
-    <table class="table">
-        <thead>
-        <tr>
-                <th style="width:40%"></th>
-                <th style="width:40%"></th>
-                <th style="width:20%"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[19]">
-                        <span class="glyphicon glyphicon-minus"></span>
-                    </button>
-                </span>
-                <input type="text" name="quant[19]" class="form-control input-number" value="0" min="0" max="5" id="batataFrita">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[19]">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                </span>
-            </div>
-            </td>
-            <td><h4>Batata Frita</h4></td>
-            
-            <td><h4>R$9.00</h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[20]">
-                        <span class="glyphicon glyphicon-minus"></span>
-                    </button>
-                </span>
-                <input type="text" name="quant[20]" class="form-control input-number" value="0" min="0" max="5" id="onionRings">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[20]">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                </span>
-            </div>
-            </td>
-            <td><h4>Onion Rings</h4></td>
-            
-            <td><h4>R$12.00</h4></td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-</div>
-</div>
+  </div>
+  <!-- /.container -->
 
-<div class="container">
-<div class="col-3 col-md-5 col-xs-offset-0">
-    <center><img src="./src/suco.png" style = "width: 15%; height: 15%;"></center>
-    <div class="table-responsive">          
-    <table class="table">
-        <thead>
-        <tr>
-                <th style="width:40%"></th>
-                <th style="width:40%"></th>
-                <th style="width:20%"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[21]">
-                        <span class="glyphicon glyphicon-minus"></span>
-                    </button>
-                </span>
-                <input type="text" name="quant[21]" class="form-control input-number" value="0" min="0" max="5" id="refrigerante">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[21]">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                </span>
-            </div>
-            </td>
-            <td><h4>Refrigerante</h4></td>
-            
-            <td><h4>R$7.00</h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[22]">
-                        <span class="glyphicon glyphicon-minus"></span>
-                    </button>
-                </span>
-                <input type="text" name="quant[22]" class="form-control input-number" value="0" min="0" max="5" id="suco">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[22]">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                </span>
-            </div>
-            </td>
-            <td><h4>Suco</h4></td>
-            
-            <td><h4>R$5.00</h4></td>
-        </tr>
-        <tr>
-            <td>
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="quant[23]">
-                        <span class="glyphicon glyphicon-minus"></span>
-                    </button>
-                </span>
-                <input type="text" name="quant[23]" class="form-control input-number" value="0" min="0" max="5" id="agua">
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[23]">
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-                </span>
-            </div>
-            </td>
-            <td><h4>Água</h4></td>
-            
-            <td><h4>R$2.00</h4></td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-</div>
-</div>
-
-<div class="container">
-    <div class="col-sm-5 col-xs-offset-0">
-        <button class="btn btn-success btn-block" id="addCart">Adicionar ao Carrinho</button>
-    </div>
-</div>
 <br><br>
 <br><br>
 <br><br>
