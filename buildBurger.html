@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/indexLayout.css">
+    <link rel="stylesheet" href="./css/shoppingCart.css">
 </head>	
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
@@ -35,26 +36,15 @@
             <li><a href="contato.html">CONTATO</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> X - Items<span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-cart" role="menu">
-                            <!--<li>
-                                    <span class="item">
-                                      <span class="item-left">
-                                          <img src="http://lorempixel.com/50/50/" alt="" />
-                                          <span class="item-info">
-                                              <span>Item name</span>
-                                              <span>23$</span>
-                                          </span>
-                                      </span>
-                                      <span class="item-right">
-                                          <button class="btn btn-xs btn-danger pull-right">x</button>
-                                      </span>
-                                  </span>
-                                </li>-->
-                    </ul>
-                </li>
-            </ul>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" > <span class="glyphicon glyphicon-shopping-cart"></span> <span id="shopping-cart-icon"></span> <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li id="cart-menu">
+                        <span>Carrinho Vazio :(</span>
+                    </li>   
+                </ul>
+            </li>
+        </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav> 
@@ -79,8 +69,7 @@
 
       <div class="col-lg-9">
 
-        <div class="row">
-
+        <div class="row" id="divCards">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
                         <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" style="height: 50%; width:50% " alt=""></a>
@@ -92,42 +81,13 @@
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                         </div>
                         <div class="card-footer">
-                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <div class=\"card-footer\" >
+                                    <button type="button" class="btn btn-success-cart" data-id="" data-nome="" data-descricao="" data-preco="">+ Carrinho</button>
+                                </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" style="height: 50%; width:50% " alt=""></a>
-                        <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" style="height: 50%; width:50% " alt=""></a>
-                        <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Item One</a>
-                        </h4>
-                        <h5>$24.99</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                        </div>
-                        <div class="card-footer">
-                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                        </div>
-                    </div>
-                </div>
 
         </div>
         <!-- /.row -->
@@ -161,8 +121,9 @@
     <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->	  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/minusScript.js"></script>
-<script src="js/buildBurger.js"></script>
-<script src="js/carrinhoScript.js"></script>	
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script src="./js/fireBaseGetBurgers.js"></script>
+<script src="./js/shoppingCart.js"></script>
+	
 </body>	
 </html>

@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/indexLayout.css">
+    <link rel="stylesheet" href="./css/shoppingCart.css">
 </head>	
 <body>
 
@@ -34,22 +35,11 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> X - Items<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" > <span class="glyphicon glyphicon-shopping-cart"></span> <span id="shopping-cart-icon"></span> <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-cart" role="menu">
-                        <!--<li>
-                                <span class="item">
-                                  <span class="item-left">
-                                      <img src="http://lorempixel.com/50/50/" alt="" />
-                                      <span class="item-info">
-                                          <span>Item name</span>
-                                          <span>23$</span>
-                                      </span>
-                                  </span>
-                                  <span class="item-right">
-                                      <button class="btn btn-xs btn-danger pull-right">x</button>
-                                  </span>
-                              </span>
-                            </li>-->
+                    <li id="cart-menu">
+                        <span>Carrinho Vazio :(</span>
+                    </li>   
                 </ul>
             </li>
         </ul>
@@ -78,10 +68,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script>
-    localStorage.setItem("name", JSON.stringify("Mulambo"));
-</script>
+<script src="./js/shoppingCart.js"></script>
 
 </body>
 </html>

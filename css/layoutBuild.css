@@ -54,3 +54,10 @@ html {
 	table#cart tfoot td .btn{display:block;}
 	
 }
+
+.btn-success-cart {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
