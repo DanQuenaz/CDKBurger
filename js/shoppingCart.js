@@ -66,12 +66,12 @@ function updateCart(){
 //Funções do Carrinho
 
 function saveCart(){
-    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+    sessionStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 }
 
 function loadCart(){
-   if(JSON.parse( localStorage.getItem("shoppingCart") ) != null){
-       shoppingCart = JSON.parse( localStorage.getItem("shoppingCart") );
+   if(JSON.parse( sessionStorage.getItem("shoppingCart") ) != null){
+       shoppingCart = JSON.parse( sessionStorage.getItem("shoppingCart") );
    }
 }
 

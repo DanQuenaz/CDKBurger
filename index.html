@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/indexLayout.css">
     <link rel="stylesheet" href="./css/shoppingCart.css">
+    <link rel="stylesheet" href="./css/loginLayout.css">
 </head>	
 <body>
 
@@ -42,6 +43,47 @@
                     </li>   
                 </ul>
             </li>
+ 
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                  <ul id="login-dp" class="dropdown-menu">
+                      <li id="loginBox">
+                           <!--div class="row" id="loginBox">
+                                  <div class="col-md-12">
+                                      Login via
+                                      <div class="social-buttons">
+                                          <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                          <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                      </div>
+                                      ou
+                                       <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                              <div class="form-group">
+                                                   <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                                   <input type="email" class="form-control" id="emailLogin" placeholder="Email" required>
+                                              </div>
+                                              <div class="form-group">
+                                                   <label class="sr-only" for="exampleInputPassword2">Senha</label>
+                                                   <input type="password" class="form-control" id="passwordLogin" placeholder="Senha" required>
+                                                   <div class="help-block text-right"><a href="">Esqueci minha senha.</a></div>
+                                              </div>
+                                              <div class="form-group">
+                                                   <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                              </div>
+                                              <div class="checkbox">
+                                                   <label>
+                                                   <input type="checkbox">Mantenha-me logado
+                                                   </label>
+                                              </div>
+                                       </form>
+                                  </div>
+                                  <div class="bottom text-center">
+                                      Novo aqui? <a href="#"><b>Crie sua conta</b></a>
+                                  </div>
+                           </div-->
+                      </li>
+                  </ul>
+              </li>            
+
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -68,7 +110,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 <script src="./js/shoppingCart.js"></script>
+<script src="./js/login.js"></script>
 
 </body>
 </html>
