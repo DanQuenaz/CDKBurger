@@ -27,7 +27,7 @@ $('#divCards').on('click', '.btn-success-cart', function(event){
     updateCart();
  });
 
- $('#buttons-cart').on('click', '.btn-warning', function(event){
+ $('#buttons-cart').on('click', '#btnAddCart', function(event){
     event.preventDefault();
     console.log("FOI");
     clearCart();

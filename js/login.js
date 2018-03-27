@@ -1,4 +1,7 @@
-
+User = function(uid, nome){
+  this.uid = uid;
+  this.nome = nome;
+}
 
 // Initialize Firebase
 var config = {
@@ -15,15 +18,9 @@ function saveLoged(userLoged){
   sessionStorage.setItem("lOged", userLoged);
 }
 
-function validateForm(){
-  var email = document.getElementById("emailLogin").value;
-  var password = document.getElementById("passwordLogin").value;
-  var auth = firebase.auth();
-  var promise = auth.signInWithEmailAndPassword(email, password).catch(function(error) {
 
-  });
 
-}
+
 
 firebase.auth().onAuthStateChanged(firebaseUser => {
   var value = "";
@@ -32,24 +29,45 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     var dataRef = firebase.database().ref().child("Cliente").child(firebaseUser.uid);
     dataRef.on('value', function(datasnapshot){
       userName = datasnapshot.child("Nome").val();
-      value = 
+      sessionStorage.setItem("lOged", "true");
+      updadeLoginBox();
+    });
+  }else{
+    sessionStorage.removeItem("lOged");
+    updadeLoginBox();
+  }
+});
+
+
+
+function updadeLoginBox(){
+  var value = "";
+  var lOged = sessionStorage.getItem("lOged");
+  ;
+  if(lOged != null){
+
+    console.log("LOGADO");
+
+    value = 
 
       "<div class=\"row\" id=\"loginBox\">" +
           "<div class=\"col-md-6\">" +
-              "<h3>Olá " + userName + "</h3><br>"+
+              "<h3>Olá Cabritinho</h3><br>"+
           "</div>"+
           "<div class=\"col-md-4\">" +
             "<button type=\"button\" class=\"btn btn-success\">Minha Conta</button><br><br><br>"+
           "</div>"+
           "<div class=\"bottom\" style=\"height:50px\">"+
             "<button type=\"button\" class=\"btn btn-info\"  style=\"position:absolute; bottom:1px; left:1px\">Meus Pedidos</button>"+
-            "<button type=\"button\" class=\"btn btn-warning\" id=\"btnLogout\" style=\"position:absolute; bottom:1px; right:1px\">Sair</button>"+
+            "<button type=\"button\" class=\"btn btn-warning\" id=\"btnLogout\" style=\"position:absolute; bottom:1px; right:1px\" onclick=\"firebase.auth().signOut()\">Sair</button>"+
           "</div>"+
       "</div>";
 
       document.getElementById("loginBox").innerHTML = value;
-    });
+
   }else{
+    console.log("DESLOGADO");
+
     value = 
 
     "<div class=\"row\" id=\"loginBox\">" +
@@ -87,9 +105,29 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 
     document.getElementById("loginBox").innerHTML = value;
   }
+}
+
+updadeLoginBox();
+
+
+
+$('#loginBox').on('click', '#btnEntrar', function(event){
+  event.preventDefault();
+  var email = document.getElementById("emailLogin").value;
+  var password = document.getElementById("passwordLogin").value;
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+  .then(function() {
+    // Existing and future Auth states are now persisted in the current
+    // session only. Closing the window would clear any existing state even
+    // if a user forgets to sign out.
+    // ...
+    // New sign-in will be persisted with session persistence.
+    return firebase.auth().signInWithEmailAndPassword(email, password);
+  })
+  .catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+  });
 });
 
-$('#btnLogout').on('click', function(event){
-  event.preventDefault();
-  console.log("FOI");
-});

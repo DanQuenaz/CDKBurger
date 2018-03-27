@@ -32,7 +32,7 @@ dataRef.on('value', function(snapshot) {
             "<p class=\"card-text\">"+ descricao +"</p>"+
             "</div>"+
             "<div class=\"card-footer\" >"+
-                "<button type=\"button\" class=\"btn btn-success-cart\" data-id=\"" + id + "\" data-nome=\"" + nome + "\" data-descricao=\"" + descricao + "\" data-preco=\"" + preco + "\">+ Carrinho</button>"+
+                "<button type=\"button\" class=\"btn btn-success-cart\" id=\"btnAddCart\" data-id=\"" + id + "\" data-nome=\"" + nome + "\" data-descricao=\"" + descricao + "\" data-preco=\"" + preco + "\">+ Carrinho</button>"+
             "</div>"+
         "</div>"+
       "</div>";
