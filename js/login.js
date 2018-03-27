@@ -1,25 +1,55 @@
 
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyB-SsGK82vDGFUsD1EW6V__diVOF6Zyslg",
-    authDomain: "cdk-burger.firebaseapp.com",
-    databaseURL: "https://cdk-burger.firebaseio.com",
-    projectId: "cdk-burger",
-    storageBucket: "cdk-burger.appspot.com",
-    messagingSenderId: "213254671420"
-  };
-  firebase.initializeApp(config);
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyB-SsGK82vDGFUsD1EW6V__diVOF6Zyslg",
+  authDomain: "cdk-burger.firebaseapp.com",
+  databaseURL: "https://cdk-burger.firebaseio.com",
+  projectId: "cdk-burger",
+  storageBucket: "cdk-burger.appspot.com",
+  messagingSenderId: "213254671420"
+};
+firebase.initializeApp(config);
 
+function saveLoged(userLoged){
+  sessionStorage.setItem("lOged", userLoged);
+}
 
+function validateForm(){
+  var email = document.getElementById("emailLogin").value;
+  var password = document.getElementById("passwordLogin").value;
+  var auth = firebase.auth();
+  var promise = auth.signInWithEmailAndPassword(email, password).catch(function(error) {
 
-function checkLogin(){
-  var loged = sessionStorage.getItem("lOged");
-  if(loged != null){
+  });
 
+}
+
+firebase.auth().onAuthStateChanged(firebaseUser => {
+  var value = "";
+  var userName;
+  if(firebaseUser){
+    var dataRef = firebase.database().ref().child("Cliente").child(firebaseUser.uid);
+    dataRef.on('value', function(datasnapshot){
+      userName = datasnapshot.child("Nome").val();
+      value = 
+
+      "<div class=\"row\" id=\"loginBox\">" +
+          "<div class=\"col-md-6\">" +
+              "<h3>Olá " + userName + "</h3><br>"+
+          "</div>"+
+          "<div class=\"col-md-4\">" +
+            "<button type=\"button\" class=\"btn btn-success\">Minha Conta</button><br><br><br>"+
+          "</div>"+
+          "<div class=\"bottom\" style=\"height:50px\">"+
+            "<button type=\"button\" class=\"btn btn-info\"  style=\"position:absolute; bottom:1px; left:1px\">Meus Pedidos</button>"+
+            "<button type=\"button\" class=\"btn btn-warning\" id=\"btnLogout\" style=\"position:absolute; bottom:1px; right:1px\">Sair</button>"+
+          "</div>"+
+      "</div>";
+
+      document.getElementById("loginBox").innerHTML = value;
+    });
   }else{
-    var value = "";
-
     value = 
 
     "<div class=\"row\" id=\"loginBox\">" +
@@ -57,26 +87,9 @@ function checkLogin(){
 
     document.getElementById("loginBox").innerHTML = value;
   }
-}
-
-checkLogin();
-
-
-$('#btnEntrar').on('click', function(event){
-  event.preventDefault();
-  var email = document.getElementById("emailLogin").value;
-  var password = document.getElementById("passwordLogin").value;
-  var auth = firebase.auth();
-  var promise = auth.signInWithEmailAndPassword(email, password).catch(function(error) {
-
-  });
-
 });
 
-firebase.auth().onAuthStateChanged(firebaseUser => {
-  if(firebaseUser){
-      console.log("LOGED");
-  }else{
-      console.log('not logged in');
-  }
+$('#btnLogout').on('click', function(event){
+  event.preventDefault();
+  console.log("FOI");
 });
