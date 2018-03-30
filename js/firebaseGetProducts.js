@@ -18,7 +18,7 @@ var config = {
       var id = childSnapshot.key
       var nome = childSnapshot.child("Nome").val();
       var descricao = childSnapshot.child("Descricao").val();
-      var preco = childSnapshot.child("Preco").val();
+      var preco = parseFloat( Number( childSnapshot.child("Preco").val() ) ).toFixed(2);
       
       outPut += 
         "<div class=\"product-grid\">"+
@@ -35,7 +35,7 @@ var config = {
         "<div class=\"product-info simpleCart_shelfItem\">"+
             "<div class=\"product-info-cust prt_name\">"+
                 "<h4>"+ nome +"</h4>"+								
-                "<span class=\"item_price\">$"+ preco +"</span>"+
+                "<span class=\"item_price\">R$"+ preco +"</span>"+
                 "<div class=\"ofr\">"+
                 "<p class=\"pric1\">"+ descricao +"</p>"+
                 "</div>"+

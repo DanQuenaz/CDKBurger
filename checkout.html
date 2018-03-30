@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- start menu -->
-<script src="js/simpleCart.min.js"> </script>
+<!--script src="js/simpleCart.min.js"> </script-->
 <!-- start menu -->
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/memenu.js"></script>
@@ -134,14 +134,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>
 			 <!---->
 			 <div class="cart box_1">
-				 <a href="checkout.html">
+				<a href="checkout.html">
 					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
+					<span class="simpleCart_total" id="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-			 	<div class="clearfix"> </div>
-			 </div>
+				<p><a href="javascript:;" class="simpleCart_empty" id="simpleCart_empty">Empty Cart</a></p>
+				<div class="clearfix"> </div>
+			</div>
 			 <div class="clearfix"> </div>
 			 <!---->			 
 			 </div>
@@ -155,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="price-details">
 				<h3>Price Details</h3>
 				<span>Total</span>
-				<span class="total1">6200.00</span>
+				<span class="total1" id="total1Check">6200.00</span>
 				<span>Discount</span>
 				<span class="total1">10%(Festival Offer)</span>
 				<span>Delivery Charges</span>
@@ -164,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 			<ul class="total_price">
 			   <li class="last_price"> <h4>TOTAL</h4></li>	
-			   <li class="last_price"><span>6150.00</span></li>			   
+			   <li class="last_price" id="total2Check"><span>6150.00</span></li>			   
 			</ul> 
 			<div class="clearfix"></div>
 			<div class="clearfix"></div>
@@ -176,7 +176,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<div class="col-md-9 cart-items">
-			<h1>My Shopping Bag (2)</h1>
+			<h1>Meu Carrinho</h1>
+			<div id="productsCheckout">
 				<script>$(document).ready(function(c) {
 					$('.close1').on('click', function(c){
 						$('.cart-header').fadeOut('slow', function(c){
@@ -237,7 +238,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				    </div>
 			</div>		
 		</div>
+	</div>
 		<div class="clearfix"> </div>
+		
 	</div>
 </div>
 <!-- //check out -->
@@ -310,5 +313,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>
 <!---->
+
+<script type="module" src="./js/checkout.js"></script>
 </body>
 </html>
