@@ -1,4 +1,4 @@
-w/*--A Design by W3layouts 
+/*--A Design by W3layouts 
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -116,8 +116,10 @@ h1.b1,h2.b2,h3.b3 {
   display: inline-block;
 }
 .header-bottom {
-    border-bottom: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
+
+/* Logo CDK Burger */
 .logo h1 a{
 	color: #F1F1F1;
     font-family: 'Dosis-Medium';
@@ -125,8 +127,9 @@ h1.b1,h2.b2,h3.b3 {
     font-weight: 100;
     padding: 0.5em 1.3em;
 	text-decoration:none;
-	background: #ff5d56;
+	background: #000;
 	display:inline-block;
+	opacity: 0.8;
 }
 .logo h1 a:hover{
 	text-decoration:none;
@@ -310,7 +313,7 @@ span.disc {
     font-size: 0.85em;
 }
 .feature-grid:hover {
-    border-bottom:3px solid #ed645c;
+    border-bottom:3px solid #00a0dc;
 }
 .btm-sec{
 	margin-top:6em;
@@ -445,7 +448,7 @@ span.disc {
 	-ms-transition: 0.5s all;
 }
 .ofr-pic-info p:hover, .ofr-pic-info2 p:hover{
-	background:#ed645c;
+	background:#00a0dc;
 }
 .ofr-pic-info2 h5{
 	display:block;
@@ -459,9 +462,10 @@ span.disc {
 }
 /*----subscribe---*/
 .subscribe{
-	background:#ed645c;
+	background:#000;
 	text-align:center;
 	padding:2em 0;
+	opacity: 0.8;
 }
 .subscribe h3{
 	color:#fff;
@@ -536,14 +540,16 @@ ul.nav-bottom li a {
     display: inline-block;
 }
 ul.nav-bottom li a:hover{
-    color: #ed645c;
+    color: #00a0dc;
 }
 ul.nav-bottom li:nth-child(1){
 	margin:0;
 }
+
+/* Copywrite + hover */
 .copywrite{
 	padding:1em 0;
-	background:#7D7D7D;
+	background:#000;
 }
 .copy{
 	float:left;
@@ -557,8 +563,9 @@ ul.nav-bottom li:nth-child(1){
 	color:#fff;
 }
 .copy p a:hover{
-	color:#ed645c;
+	color:#00a0dc;
 }
+/*-----*/
 .social {
   margin: 0em 0;
   float: right;
@@ -707,7 +714,7 @@ background-position:-167px -36px;
 }
 .product-grid:hover {
 	z-index: 1;
-	border-bottom:2px solid #ed645c;
+	border-bottom:2px solid #00a0dc;
 }
 .more-product-info span {
 	color:#fff;
@@ -763,7 +770,8 @@ background-position:-167px -36px;
 	margin:10px 0 0px 17px;
 }
 .item_add:hover {
-	background:#ed645c;
+	background:#000;
+	opacity: 0.8;
 	color: #fff;
 } 
 .product-info-price {
@@ -1362,12 +1370,13 @@ h3.ghj {
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
 	cursor:pointer;
-	border:2px solid #00a0dc;
+	border: transparent;
 }
+/* Botão Submit */
 .contact-form input[type="submit"]:hover{
-	background: transparent;
-	color: #00a0dc;
-	border:2px solid #00a0dc;
+	background: #000;
+	opacity: 0.8;
+	color: #fff;
 }
 .company_address{
 	padding-top:26px;
