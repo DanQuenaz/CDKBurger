@@ -7,10 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>CDK Burger</title>
+<title>Lighting A Ecommerce Category Flat Bootstarp Resposive Website Template | Account :: w3layouts</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<!--theme style-->
+<!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <script src="js/jquery.min.js"></script>
 
@@ -43,57 +43,54 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
   </script>
   
-  <div class="header-top">
-		<div class="header-bottom">			
-				   <div class="logo">
-					   <h1><a href="index.html">CDK Burger</a></h1>
-					   <!--img src="./src/Logo2.png" class="img-responsive" alt="Cinque Terre" style="height: 84px; width: 200px"></a-->				
-				   </div>
-				<!---->		 
-				<div class="top-nav">
-				   <ul class="memenu skyblue">
-					   <li class="grid"><a href="index.html">Início</a></li>
-					   <li class="grid"><a href="contact.html">Contato</a></li>
-					   <li class="active"><a href="#">Login</a></li>				
-				   </ul>				
-				</div>
-				<!---->
-				<div class="cart box_1">
-					<a href="checkout.html">
-						<div class="total">
-						<span class="simpleCart_total" id="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-						<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-					</a>
-					<p><a href="javascript:;" class="simpleCart_empty" id="simpleCart_empty">Empty Cart</a></p>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-				<!---->			 
-				</div>
-			   <div class="clearfix"> </div>
-	</div>
+<div class="header-top">
+	<div class="header-bottom">			
+        <div class="logo">
+            <h1><a href="index.html">CDK Burger</a></h1>
+            <!--img src="./src/Logo2.png" class="img-responsive" alt="Cinque Terre" style="height: 84px; width: 200px"></a-->				
+        </div>
+        <!---->		 
+        <div class="top-nav">
+            <ul class="memenu skyblue">
+                <li class="grid"><a href="index.html">Home</a></li>
+                <li class="grid"><a href="contact.html">Contato</a></li>
+                <li class="active"><a href="#"><span id="btnLogin">Login</span></a></li>				
+            </ul>				
+        </div>
+        <!---->
+        <div class="cart box_1">
+            <a href="checkout.html">
+                <div class="total">
+                <span class="simpleCart_total" id="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            </a>
+            <p><a href="javascript:;" class="simpleCart_empty" id="simpleCart_empty">Empty Cart</a></p>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    <!---->			 
+    </div>
+    <div class="clearfix"> </div>
+</div>
 <!---->	
-<div class="login_sec">
-	 <div class="container">
-		 <ol class="breadcrumb">
-		  <li><a href="index.html">Início</a></li>
-		  <li class="active">Login</li>
+<div class="container">
+	  <ol class="breadcrumb">
+		  <li><a href="index.html">Home</a></li>
+		  <li class="active">Account</li>
 		 </ol>
-		 <h2>Login</h2>
-		 <div class="col-md-6 log">			 
-				 <p>Bem-vindo! Insira os dados abaixo para continuar.</p>
-				 <form>
-					 <h5>Usuário</h5>	
-					 <input type="text" value="" id="inptUser">
-					 <h5>Senha</h5>
-					 <input type="password" value="" id="inptPassword">					
-					 <input type="submit" value="Login" id="btnEnter">	
-						<a class="acount-btn" href="account.html">Cadastre-se!</a>
-				 </form>
-				 <a href="#">Esqueceu sua senha?</a>
-					
-		 </div>	
-				
+	 <div class="registration">
+		 <div class="registration_left">
+             <h2><span id="userName"></span></h2>
+             <h3 id="userAddress"></h3>
+             <h3 id="userEmail"></h3>
+             <br>
+             <input type="button" class="item_add items" value="Meus Pedidos">
+             <input type="button" class="item_add items" value="Sair" id="btnLogout">
+		 </div>
+		 <div class="registration_left">
+			 <h2>Endereços</h2>
+			 
+		 </div>
 		 <div class="clearfix"></div>
 	 </div>
 </div>
@@ -167,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-<script type="module" src="./js/login.js"></script>
+<script type="module" src="./js/loged.js"></script>
 <script type="module" src="./js/checkCart.js"></script>
 </body>
 </html>

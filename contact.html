@@ -21,7 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- start menu -->
-<script src="js/simpleCart.min.js"> </script>
+<!--script src="js/simpleCart.min.js"> </script-->
 <!-- start menu -->
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/memenu.js"></script>
@@ -38,20 +38,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   </div>
 			<!---->		 
 			<div class="top-nav">
-			   <ul class="memenu skyblue">
-				   <li class="active"><a href="index.html">Início</a></li>
-				   <li class="grid"><a href="#">Contato</a></li>
-				   <li class="grid"><a href="login.html">Login</a></li>				
-			   </ul>				
-			</div>
+				<ul class="memenu skyblue">
+					<li class="grid"><a href="index.html">Início</a></li>
+					<li class="active"><a href="#">Contato</a></li>
+					<li class="grid"><a href="#"><span id="btnLogin">Login</span></a></li>				
+				</ul>				
+				</div>
 			<!---->
 			<div class="cart box_1">
 				<a href="checkout.html">
-				   <div class="total">
-				   <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
-				   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-			   </a>
-			   <p><a href="javascript:;" class="simpleCart_empty">Carrinho vazio!</a></p>
+					<div class="total">
+					<span class="simpleCart_total" id="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
+					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+				</a>
+				<p><a href="javascript:;" class="simpleCart_empty" id="simpleCart_empty">Empty Cart</a></p>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="clearfix"> </div>
@@ -184,5 +184,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>
 <!---->
+<script type="module" src="./js/checkLogin.js"></script>
+<script type="module" src="./js/checkCart.js"></script>
 </body>
 </html>

@@ -1824,7 +1824,6 @@ label {
 	outline: none;
 	color: #333333;
 	-webkit-appearance: none;
-	text-transform: capitalize;
 	background: #FFFFFF;
 	border: 1px solid rgb(231, 231, 231);
 	font-weight: normal;
@@ -1837,7 +1836,6 @@ label {
   color: #fff;
   text-decoration: none;
   border:none;
-  text-transform:uppercase;
   font-weight: 500;
 	transition: 0.5s ease;
 	-moz-transition: 0.5s ease;
